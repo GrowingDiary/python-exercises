@@ -132,9 +132,9 @@ def main():
     print('数字顺序：', solution1(input_x, input_y, input_z))
     print('数字顺序：', solution2(input_x, input_y, input_z))
     print('数字顺序（冒泡排序）：', bubble_sort(input_x, input_y, input_z))
-    print('数字顺序（选择排序）：', bubble_sort(input_x, input_y, input_z))
-    print('数字顺序（插入排序）：', bubble_sort(input_x, input_y, input_z))
-    print('数字顺序（快速排序）：', bubble_sort(input_x, input_y, input_z))
+    print('数字顺序（选择排序）：', selection_sort(input_x, input_y, input_z))
+    print('数字顺序（插入排序）：', insertion_sort(input_x, input_y, input_z))
+    print('数字顺序（快速排序）：', quick_sort(input_x, input_y, input_z))
 
 
 if __name__ == '__main__':
