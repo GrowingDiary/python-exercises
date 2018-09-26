@@ -16,6 +16,15 @@ def solution1(length):
     return fibonacci_seq
 
 
+def solution2(length):
+    # Binet's Fibonacci number formula
+    # http://mathworld.wolfram.com/FibonacciNumber.html
+    def fibonacci(n):
+        return int(((1 + 5 ** 0.5) ** n - (1 - 5 ** 0.5) ** n) / (2 ** n * 5 ** 0.5))
+
+    return list(map(fibonacci, range(1, length + 1)))
+
+
 def main():
     input_str = input('输入生成数列的长度：')
     length = 0
@@ -26,6 +35,8 @@ def main():
         return
     print('---------- solution 1 ---------- ')
     print('Fibonacci sequence:', solution1(length))
+    print('---------- solution 2 ---------- ')
+    print('Fibonacci sequence:', solution2(length))
 
 
 if __name__ == '__main__':
