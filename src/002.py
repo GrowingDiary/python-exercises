@@ -45,7 +45,6 @@ def solution2(profit):
 
 def main():
     input_str = input('输入利润提成（万元）：')
-    profit = 0
     try:
         profit = int(input_str)
     except Exception as e:

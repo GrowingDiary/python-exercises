@@ -12,7 +12,6 @@ def solution1(n):
 
 def main():
     input_str = input('输入一个数字：')
-    num = 0
     try:
         num = int(input_str)
     except Exception as e:

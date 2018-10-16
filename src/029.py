@@ -28,7 +28,6 @@ def solution2(n):
 
 def main():
     input_str = input('输入一个不多于5位的正整数：')
-    num = 0
     try:
         num = int(input_str)
     except Exception as e:

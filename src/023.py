@@ -30,7 +30,6 @@ def solution2(h):
 
 def main():
     input_str = input('输入菱形的高度：')
-    h = 0
     try:
         h = int(input_str)
     except Exception as e:

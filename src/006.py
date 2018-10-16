@@ -27,7 +27,6 @@ def solution2(length):
 
 def main():
     input_str = input('输入生成数列的长度：')
-    length = 0
     try:
         length = int(input_str)
     except Exception as e:

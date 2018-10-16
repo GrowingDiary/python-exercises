@@ -20,7 +20,6 @@ def solution2(n):
 
 def main():
     input_str = input('求第几个人的年龄：')
-    num = 0
     try:
         num = int(input_str)
     except Exception as e:

@@ -18,7 +18,6 @@ def solution2(number):
 
 def main():
     input_str = input('输入一个数字：')
-    number = 0
     try:
         number = int(input_str)
     except Exception as e:

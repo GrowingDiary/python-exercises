@@ -21,7 +21,6 @@ def solution1(length):
 
 def main():
     input_str = input('输入月数：')
-    month_count = 0
     try:
         month_count = int(input_str)
     except Exception as e:
