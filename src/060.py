@@ -23,14 +23,16 @@ def solution1(height):
 
 
 def solution2(height):
-    print('1')
+    format_str = '{{:^{length}}}'.format(length=height * 4)
+    print(format_str.format('1'))
     for i in range(2, height + 1):
         s = 1
-        print('1', end=' ')
+        print_str = '{:^4}'.format('1')
         for j in range(1, i - 1):
             s = (i - j) * s // j
-            print(s, end=' ')
-        print('1')
+            print_str += '{:^4}'.format(s)
+        print_str += '{:^4}'.format('1')
+        print(format_str.format(print_str))
 
 
 def main():
